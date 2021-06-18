@@ -48,7 +48,7 @@ function checkAnswer(currentLevel) {
       gameStartEndBg.classList.remove("game-over");
     }, 1000);
     gameStartEndBg.classList.add("game-start-end");
-    btnTitle.innerHTML = "Game Over, Click or Tap Here to Restart";
+    btnTitle.innerHTML = "Click or Tap Here to Restart";
 
     startOver();
   }

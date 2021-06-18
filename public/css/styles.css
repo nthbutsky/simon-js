@@ -22,6 +22,7 @@ body {
 .btn-title {
   font-family: "Gugi", cursive;
   font-size: 2rem;
+  width: 100%;
   color: #858585;
   position: absolute;
   top: 50%;
@@ -36,6 +37,30 @@ body {
   color: white;
 }
 
+@media (max-width: 660px) {
+  .btn-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .btn-title {
+    font-size: 1rem;
+  }
+}
+
+@media (max-height: 660px) {
+  .btn-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-height: 460px) {
+  .btn-title {
+    font-size: 1rem;
+  }
+}
+
 .btn__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -47,12 +72,64 @@ body {
   z-index: 1;
 }
 
+@media (max-width: 660px) {
+  .btn__container {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 460px) {
+  .btn__container {
+    gap: 20px;
+  }
+}
+
+@media (max-height: 660px) {
+  .btn__container {
+    gap: 40px;
+  }
+}
+
+@media (max-height: 460px) {
+  .btn__container {
+    gap: 20px;
+  }
+}
+
 .btn {
   border: 0.3125rem solid #393e46;
-  width: 25rem;
-  height: 25rem;
+  width: 300px;
+  height: 300px;
   border-radius: 10%;
   cursor: pointer;
+}
+
+@media (max-width: 660px) {
+  .btn {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 460px) {
+  .btn {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-height: 660px) {
+  .btn {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-height: 460px) {
+  .btn {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .red {

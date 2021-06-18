@@ -21,6 +21,7 @@ body {
 .btn-title {
   font-family: "Gugi", cursive;
   font-size: 2rem;
+  width: 100%;
   color: rgb(133, 133, 133);
   position: absolute;
   top: 50%;
@@ -31,6 +32,18 @@ body {
   transition: 0.5s;
   &:hover {
     color: rgb(255, 255, 255);
+  }
+  @media (max-width: 660px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 460px) {
+    font-size: 1rem;
+  }
+  @media (max-height: 660px) {
+    font-size: 1.5rem;
+  }
+  @media (max-height: 460px) {
+    font-size: 1rem;
   }
 }
 
@@ -43,14 +56,43 @@ body {
   height: 100%;
   gap: 3.125rem;
   z-index: 1;
+  @media (max-width: 660px) {
+    gap: 40px;
+  }
+  @media (max-width: 460px) {
+    gap: 20px;
+  }
+  @media (max-height: 660px) {
+    gap: 40px;
+  }
+  @media (max-height: 460px) {
+    gap: 20px;
+  }
 }
 
 .btn {
   border: 0.3125rem solid #393e46;
-  width: 25rem;
-  height: 25rem;
+  width: 300px;
+  height: 300px;
   border-radius: 10%;
   cursor: pointer;
+
+  @media (max-width: 660px) {
+    width: 200px;
+    height: 200px;
+  }
+  @media (max-width: 460px) {
+    width: 100px;
+    height: 100px;
+  }
+  @media (max-height: 660px) {
+    width: 200px;
+    height: 200px;
+  }
+  @media (max-height: 460px) {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .red {
